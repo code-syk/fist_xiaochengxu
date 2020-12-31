@@ -1,0 +1,36 @@
+<view class="page-body">
+  <view class="aside" wx:if="{{showAside}}">
+    <view class="the-item" bindtap="click_btn" data-btn = "1" style="background-color:{{ btn_id==1 ? 'rgb(255, 255, 255)' : 'rgb(158, 217, 157)' }}">震动类型</view>
+    <view class="the-item" bindtap="click_btn" data-btn = "2" style="background-color:{{ btn_id==2 ? 'rgb(255, 255, 255)' : 'rgb(158, 217, 157)' }}">温度温控</view>
+  </view>
+  <!-- 震动类型 -->
+  <view class="input_content" wx:if="{{zd_lx}}">
+    <view class="item">
+      <input class="weui-input" type="text" placeholder="震动类型"  value="{{saoma}}"/>
+      <button id="sao_btn" catchtap="saoma"><text class = 'sao'>扫</text></button>
+    </view>
+    <view class="item">
+      <input class="weui-input" type="text" placeholder="震动类型" />
+    </view>
+
+    <view class="item the_photo">
+      <image class="item_img" src="{{src ? src : '../../assets/images/tabbar/profile.png'}}" catchtap="takePhoto" data-src='src'></image>
+      <image class="item_img" src="{{src1 ? src1 : '../../assets/images/tabbar/profile.png'}}" catchtap="takePhoto" data-src='src1'></image>
+    </view>
+  </view>
+  <!-- 温度温控 -->
+  <view class="input_content" wx:if="{{wd_wk}}">
+    <view class="item">
+      <input class="weui-input" type="text" placeholder="温度温控"  value="{{saoma}}"/>
+      <button id="sao_btn" catchtap="saoma">扫</button>
+    </view>
+    
+    <view class="item">
+      <input class="weui-input" type="text" placeholder="温度温控" />
+    </view>
+    <view class="item the_photo">
+      <image class="item_img" src="{{src ? src : '../../assets/images/tabbar/profile.png'}}" catchtap="takePhoto" data-src='src'></image>
+      <image class="item_img" src="{{src1 ? src1 : '../../assets/images/tabbar/profile.png'}}" catchtap="takePhoto" data-src='src1'></image>
+    </view>
+  </view>
+</view>

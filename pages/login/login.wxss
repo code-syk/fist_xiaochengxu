@@ -1,0 +1,49 @@
+/* pages/login/login.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.login{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.the_content{
+  width:70vw;
+  height: 60vh;
+  background-color: cornsilk;
+  position: absolute;
+  left: 15vw;
+  top: 20vh;
+}
+.inputs{
+  position: absolute;
+  width: 100%;
+  top: 15%;
+}
+.login_input{
+  margin-top: 20px;
+  padding:3px;
+  border-bottom: 1px solid rgb(193, 194, 199);
+}
+.buttons{
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+}
+.login_btn{
+  margin: 10px;
+  width: 70vw !important;
+  background-color: seagreen;
+}
+.login_btn .login_hover{
+  background-color: seashell;
+}
+.login_text{
+  width: 100%;
+  font-size:12px;
+  position: absolute;
+  top: 5%;
+  color: red;
+  text-align: center;
+}

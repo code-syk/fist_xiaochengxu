@@ -1,0 +1,13 @@
+<!--pages/workbench/workbench.wxml-->
+<view class="content">
+  <view class="container">
+    <view id="Inspection">
+      <navigator url="../inspection/inspection">
+        <text>巡检</text>
+      </navigator>
+    </view>
+    <view id="spot">
+      <text>点检</text>
+    </view>
+  </view>
+</view>

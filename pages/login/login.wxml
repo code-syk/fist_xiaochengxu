@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="the_content">
+      <view class="inputs">
+        <input type="text" placeholder="账号" class="login_input" bindinput = 'login_user' value="{{userName}}"/>
+        <text class="login_text" wx:if="{{passTips}}">密码错误，请重试</text>
+        <input type="password" placeholder="密码" class="login_input" bindinput="login_password" value="{{userPassword}}"/>
+      </view>
+      <view class="buttons">
+        <button class="login_btn login_hover" bindtap="login_click" >登录</button>
+        <button class="login_btn">取消</button>
+      </view>
+  </view>
+</view>
